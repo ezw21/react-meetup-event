@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
-import Login from "./Login";
+// import Login from "./Login";
+import UserProfile from "./UserProfile";
 
 function Auth() {
     return (
@@ -14,7 +15,8 @@ function Auth() {
                 >
                     Learn React
                 </a> */}
-                <Login />
+                {/* <Login /> */}
+                <UserProfile />
             </header>
         </div>
     );
