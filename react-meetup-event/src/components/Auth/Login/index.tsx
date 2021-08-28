@@ -16,7 +16,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-function Copyright() {
+const Copyright = () => {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
             {"Copyright © "}
@@ -27,7 +27,7 @@ function Copyright() {
             {"."}
         </Typography>
     );
-}
+};
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor: "FFFFFF",
     },
     avatar: {
         margin: theme.spacing(1),
@@ -52,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function Login() {
+const Login = () => {
     const classes = useStyles();
     return (
         // <div className="LoginComponent">
@@ -65,7 +64,7 @@ function Login() {
             <CssBaseline />
             <div className={classes.paper}>
                 <Avatar className={classes.avatar}>
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={logo} className="Login-logo" alt="logo" />
                 </Avatar>
                 <Typography component="h1" variant="h5">
                     Sign in
@@ -125,6 +124,6 @@ function Login() {
             </Box>
         </Container>
     );
-}
+};
 
 export default Login;
